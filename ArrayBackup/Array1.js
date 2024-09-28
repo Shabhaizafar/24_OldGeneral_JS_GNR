@@ -136,16 +136,16 @@
 // Reference:
 // Object,Array.....
 
-var Arr1 = [1,2,3];
-var Arr2 = Arr1;
-console.log("Before : ");
-console.log("Value of Arr1 : ",Arr1);
-console.log("Value of Arr2 : ",Arr2);
-Arr1.push(100);
-Arr2.push("Royal");
-console.log("Before : ");
-console.log("Value of Arr1 : ",Arr1);
-console.log("Value of Arr2 : ",Arr2);
+// var Arr1 = [1,2,3];
+// var Arr2 = Arr1;
+// console.log("Before : ");
+// console.log("Value of Arr1 : ",Arr1);
+// console.log("Value of Arr2 : ",Arr2);
+// Arr1.push(100);
+// Arr2.push("Royal");
+// console.log("Before : ");
+// console.log("Value of Arr1 : ",Arr1);
+// console.log("Value of Arr2 : ",Arr2);
 
 
 
