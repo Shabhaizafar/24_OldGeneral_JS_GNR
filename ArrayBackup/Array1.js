@@ -263,7 +263,7 @@
 // ✅ For of loop.
 // ✅ For in loop.
 
-const Arr = [11,12,13,14,15,"Zafar","Royal"];
+// const Arr = [11,12,13,14,15,"Zafar","Royal"];
 //            0  1  2  3  4    ....................
 // Length Property : 
 // console.log(Arr.length);
@@ -311,3 +311,35 @@ const Arr = [11,12,13,14,15,"Zafar","Royal"];
 
 ////////////////////////////////////
 // ✅ Array destructuring.
+
+const Arr1 = [11,12,13,14,15,"Royal","Raj"];
+console.log(Arr1);
+
+// console.log(Arr1[0]); // 1st Method
+// Arr1.shift();
+// console.log(Arr1[0]);
+
+
+
+// var newTemp = Arr1[0]; // 2nd Method
+// console.log(newTemp);
+
+// Arr1.shift(); //remove from starting
+// console.log(newTemp);
+// console.log(Arr1);
+
+
+// var value1 = Arr1[0];
+// var value2 = Arr1[1];
+// var value3 = Arr1[2];
+// console.log(value1);
+// console.log(value2);
+// console.log(value3);
+
+
+    // spread Op : combine multiple values
+// var [v1,,v2,v3,...newArray] = Arr1;
+// console.log(v1);//11
+// console.log(v2);//13
+// console.log(v3);//14
+// console.log(newArray);
