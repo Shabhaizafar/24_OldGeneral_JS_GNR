@@ -24,25 +24,29 @@
 var upin = +prompt("Enter Your Pin Number : ");
 var balance = 10000;
 var amount;
-if(upin==1234){
+if (upin == 1234) {
     var choice = +prompt("1) Withdraw \n2) Deposite\n\nEnter Your Choice :");
-    switch(choice){
-        case 1 : 
-                amount = + prompt("How much money would you like to withdraw?");
-                var Confirmation = confirm(`You are attempting to withdraw ${amount}. Do you want to proceed?`);
-                if(Confirmation==true){
-                    var Confirmation2 = confirm(`Your withdrawal was successful! Your new balance is ${balance-amount}. Would you like to make another transaction?`);
+    switch (choice) {
+        case 1:
+            amount = + prompt("How much money would you like to withdraw?");
+            var Confirmation = confirm(`You are attempting to withdraw ${amount}. Do you want to proceed?`);
+            if (Confirmation) {
+                if (amount <= balance) {
+                    var Confirmation2 = confirm(`Your withdrawal was successful! Your new balance is ${balance - amount}. Would you like to make another transaction?`);
                     console.log(Confirmation2);
-                }else{
-                   var Confirmation2 = confirm("You have chosen to cancel the transaction. Would you like to exit the ATM?");
-                    console.log(Confirmation2);
+                } else {
+                            //confirm
                 }
-                 break;
-        case 2 : console.log("Deposit");
-                 break;
-        default : console.log("Wrong Choice!!");
+            }else{
+                var Confirmation2 = confirm("You have chosen to cancel the transaction. Would you like to exit the ATM?");
+                console.log(Confirmation2);
+            }
+            break;
+        case 2: console.log("Deposit");
+            break;
+        default: console.log("Wrong Choice!!");
     }
 }
-else{
+else {
     console.log("Wrong");
 }
