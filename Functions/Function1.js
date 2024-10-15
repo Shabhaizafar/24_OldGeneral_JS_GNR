@@ -62,25 +62,3 @@
 
 
 // ///////////////////////////////////////////////////
-
-// 1. **Question about PIN Entry**: 
-//    - "What is your 4-digit PIN?"
-
-// 2. **Question about Withdrawal Amount**: 
-//    - "How much money would you like to withdraw?"
-
-// 3. **Confirmation for Withdrawal**: 
-//    - "You are attempting to withdraw $[amount]. Do you want to proceed?"
-
-// 4. **Insufficient Funds Warning**: 
-//    - "You have insufficient funds for this withdrawal. Would you like to try a different amount?"
-
-// 5. **Success Notification**: 
-//    - "Your withdrawal was successful! Your new balance is $[balance]. Would you like to make another transaction?"
-
-// 6. **Incorrect PIN Notification**: 
-//    - "The PIN entered is incorrect. Would you like to try again?"
-
-// 7. **Transaction Cancellation**: 
-//    - "You have chosen to cancel the transaction. Would you like to exit the ATM?"
-
