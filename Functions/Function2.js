@@ -33,19 +33,17 @@
 // console.log(ans);
 
 //  vi.with arg and with rtn type
-function result(marks){
-    if(marks>33){
-        return "You have cleared this exam.Give me Party.";
-    }
-    else{
-        return "You haven't cleared this exam.Better luck next time.";
-    }
-}
+// function result(marks){
+//     if(marks>33){
+//         return "You have cleared this exam.Give me Party.";
+//     }
+//     else{
+//         return "You haven't cleared this exam.Better luck next time.";
+//     }
+// }
 
-var ans = result(5);
-console.log(ans);
-
-
+// var ans = result(5);
+// console.log(ans);
 
 ////
 // print 1 to 100 : using without arg without rtn
