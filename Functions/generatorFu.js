@@ -37,11 +37,11 @@ var functionrunner = Generatorfu();
 // console.log(functionrunner.next().value); //undefined
 
 
-console.log(functionrunner.next());
-console.log(functionrunner.next());
-console.log(functionrunner.next());
-console.log(functionrunner.next());
-console.log(functionrunner.next());
+// console.log(functionrunner.next());
+// console.log(functionrunner.next());
+// console.log(functionrunner.next());
+// console.log(functionrunner.next());
+// console.log(functionrunner.next());
 
 
 
