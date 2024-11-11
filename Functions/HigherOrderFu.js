@@ -42,3 +42,9 @@ function Addition(a,b){
 function Subraction(a,b){
     console.log("Subtraction is : ",a-b);
 }
+
+// var str = "Zgarasdf";
+// str.toLowerCase();
+// str.toUpperCase()
+
+// str.concat(str2);
