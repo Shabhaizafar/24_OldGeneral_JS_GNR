@@ -47,11 +47,5 @@ console.log(ans3);
 
 
 // console.log(ans);
-// - Sort.
-// - Find.
-// - Every.
-// - Some.
-// - Fill method.
-// - Splice method.
-// - Reduce.
+
 
