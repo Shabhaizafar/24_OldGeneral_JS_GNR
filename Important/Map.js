@@ -1,14 +1,14 @@
-var myMap = new Map();
-console.log(myMap);
+// var myMap = new Map();
+// console.log(myMap);
 
-// how to add new Property in a Map : 
+// // how to add new Property in a Map : 
 
-            // key      value
-myMap.set("Firstname","Raj");
-myMap.set("Lastname","Shah");
-myMap.set(1,123);
+//             // key      value
+// myMap.set("Firstname","Raj");
+// myMap.set("Lastname","Shah");
+// myMap.set(1,123);
 
-console.log(myMap);
+// console.log(myMap);
 
 //  how to clear/delete full data in a Map : 
 // myMap.clear();
@@ -32,9 +32,9 @@ console.log(myMap);
 // 
 // console.log(myMap.has("1"));
 
-myMap.forEach((value,key,fullMap)=>{
-    console.log(value,key,fullMap);
-});
+// myMap.forEach((value,key,fullMap)=>{
+//     console.log(value,key,fullMap);
+// });
 
 
 
@@ -58,3 +58,44 @@ myMap.forEach((value,key,fullMap)=>{
 
 // Given a Map of products and their prices, create a new Map where all prices are increased by 10%.
 // Write a function to reverse the keys and values in a Map.
+
+var myMap = new Map();
+
+myMap.set("Computer",20000);
+myMap.set("Keyboard",1500);
+myMap.set("Mouse",1000);
+
+console.log(myMap);
+
+
+var newMap = new Map();
+
+myMap.forEach((value,key)=>{
+    newMap.set(key,value*0.10+value);
+});
+
+console.log(newMap);
+
+// {'Computer' => 22000, 'Keyboard' => 1650, 'Mouse' => 1100}
+
+
+
+// function Main(){
+//     var ans = newMap.values();
+// var newArr = [];
+// var reverseMap = new Map();
+// myMap.forEach(()=>{
+//     newArr.push(ans.next().value);
+// });
+
+// for (const value of newArr.reverse()) {
+//     newMap.forEach((v,k)=>{
+//         if(value==v){
+//             reverseMap.set(k,v);
+//         }
+//     });
+// }
+// console.log(reverseMap);
+// }
+
+// Main();
