@@ -24,5 +24,3 @@ var obj2 = Main("Ajay","Patel",20);
 console.log(obj2);
 obj2.BioData();
 obj2.is18();
-
-
