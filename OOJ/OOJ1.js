@@ -36,7 +36,7 @@ function Main(){
     return User;
 }
 
-var obj5 = Main();
+// var obj5 = Main();
 
-console.log(obj5);
+console.log(Main());
 
