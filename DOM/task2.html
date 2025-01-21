@@ -15,6 +15,7 @@
             height: 100vh;
             justify-content: center;
             align-items: center;
+            flex-direction: column;
         }
         div{
             width: 50%;
@@ -27,10 +28,29 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            
+        }
+        section{
+            width: 50%;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        main{
+            flex-grow: 1;
+            text-align: center;
+            font-family: calibri;
+            font-size: 24px;
+            background-color: lightseagreen;
         }
     </style>
 </head>
 <body>
+    <section>
+        <main>V : <span class="v">0</span> </main>
+        <main>C : <span class="c">0</span></main>
+    </section>
     <div></div>
 
     <script src="Type.js"></script>
