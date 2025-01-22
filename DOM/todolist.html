@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ToDo List</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #add8e6;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .todo-container {
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 400px;
+      padding: 20px;
+    }
+
+    .todo-header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .todo-header h1 {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+    }
+
+    .todo-header h1 .material-icons {
+      font-size: 28px;
+    }
+
+    .todo-input {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .todo-input input {
+      flex: 1;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      font-size: 16px;
+    }
+
+    .todo-input button {
+      background-color: #4caf50;
+      border: none;
+      padding: 10px;
+      margin-left: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .todo-input button .material-icons {
+      font-size: 20px;
+      color: white;
+    }
+
+    .todo-success {
+        display: none;
+      text-align: center;
+      color: #4caf50;
+      margin-bottom: 15px;
+      font-size: 14px;
+    }
+    .add-block {
+        display: block;
+    }
+    .todo-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .todo-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #f9f9f9;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    }
+
+    .todo-item span {
+      font-size: 16px;
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    .todo-actions {
+      display: flex;
+      gap: 8px;
+    }
+
+    .todo-actions .material-icons {
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    .todo-actions .material-icons.edit {
+      color: #2196f3;
+    }
+
+    .todo-actions .material-icons.delete {
+      color: #f44336;
+    }
+  </style>
+</head>
+<body>
+  <div class="todo-container">
+    <div class="todo-header">
+      <h1>
+        ToDo List
+        <span class="material-icons">event_note</span>
+      </h1>
+    </div>
+    <div class="todo-input">
+      <input type="text" placeholder="Add your items" class="input">
+      <button class="add">
+        <span class="material-icons">add</span>
+      </button>
+    </div>
+    <div class="todo-success">Todo item Created Successfully!</div>
+    <ul class="todo-list">
+      <li class="todo-item">
+        <span>Complete the Blog Today</span>
+        <div class="todo-actions">
+          <span class="material-icons edit">edit</span>
+          <span class="material-icons delete">delete</span>
+        </div>
+      </li>
+      
+    </ul>
+  </div>
+
+  <script src="todolist.js"></script>
+</body>
+</html>
