@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightcoral;
+        }
+        section{
+            position: absolute;
+            left: calc(50% - 100px);
+        }
+        section button{
+            width: 100px;
+            background-color: darkslategray;
+            border: none;
+            padding: 10px 30px;
+            font-size: 24px;
+            border-radius: 5px;
+            color: lightblue;
+        }
+        div{
+            display: none;
+            font-size: 24px;
+            font-family: calibri;
+            text-align: center;
+            width: 50%;
+            position: absolute;
+            left: 25%;
+            top: 200px;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button>+</button>
+        <button>-</button>
+    </section>
+    <div>
+        Zafar
+    </div>
+
+    <script>
+        const btn = document.querySelector('section');
+        var id;
+        var size = 24;
+       setTimeout(() => {
+        document.querySelector('div').style.display = "block";
+       }, 5000);
+
+       btn.addEventListener('click',function(event){
+        if(event.target.innerText== '+'){
+            id = setInterval(() => {
+                document.querySelector('div').style.fontSize = `${size}px`;
+                size+=10;
+            }, 1000);
+        }else if(event.target.innerText== '-'){
+            clearInterval(id);
+        }
+       });
+    </script>
+</body>
+</html>
