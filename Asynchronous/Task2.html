@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-color: lightblue;
+        }
+        section{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        }
+        button{
+            background-color: darkslategray;
+            color: white;
+            font-size: 20px;
+            font-family: calibri;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+        }
+        main{
+            width: 50px;
+            height: 50px;
+            background-color: rgb(103, 99, 47);
+            border-radius: 5px;
+            position: absolute;
+            top: calc(50vh - 25px);
+            left: calc(50vw - 25px);
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <button class="box1">Top</button>
+        <button class="box2">Left</button>
+        <button class="box3">Bottom</button>
+        <button class="box4">Right</button>
+        <button class="box5">Stop</button>
+    </section>
+        <main></main>
+    <script src="Task2.js"></script>
+</body>
+</html>
