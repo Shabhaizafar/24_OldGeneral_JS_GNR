@@ -1,5 +1,5 @@
 // const circle =  document.querySelector('.circle');
-// const box =  document.querySelector('.box');
+const box =  document.querySelector('.box');
 // // var v1 = parseInt(Math.random()*window.innerHeight);
 // // var v2 = parseInt(Math.random()*window.innerWidth);
 // var v1 = 100;
@@ -17,3 +17,5 @@
 //     v1 = 
 //     v2 = 
 // }
+
+console.log(box);
