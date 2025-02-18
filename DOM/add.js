@@ -61,8 +61,13 @@
 
 
 // event delegation
-const body = document.body;
+// const body = document.body;
 
-body.addEventListener('click',function(event){
-    console.log(event.target);
-});
+// body.addEventListener('click',function(event){
+//     console.log(event.target);
+// });
+
+
+// table > tr > td > img    : bubbling ,  print
+// table > tr > td > img    : capturing , print
+// table > tr > td > img    : delegation , target
